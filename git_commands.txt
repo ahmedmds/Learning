@@ -1,0 +1,88 @@
+#In Git Bash
+
+# Basic configuration
+git config --global user.name "Practice Git"
+git config --global user.email "example@example"
+git config user.name
+cat .gitconfig
+
+#Create file
+touch index.html 
+touch app.js
+touch .gitignore
+
+git config
+
+# Initialize empty repository
+git init
+git status
+
+# Create gitignore
+touch .gitignore
+
+#Stage
+git add app.js
+git add index.html
+
+# Or for staging all
+git add .
+
+#Unstage / uncommit
+git rm --cached app.js
+
+#Unstage all files
+git reset
+
+#Commit
+git commit -m "My first commit"
+
+#Create new branch
+git branch login
+
+#Switch branch to 'login'
+git checkout login
+
+#Merge branches e.g. merge 'login' to 'master', go to master branch and ..
+git merge login
+
+#Create remote repository
+#Create repo in github, then in git bash
+git remote add origin https://github.com/ahmedmds/testrepository.git
+
+#Push 'master' to remote, Go to repository folder in git bash and then..
+git push -u origin master
+
+#Remove remote origin repository
+git remote rm origin
+
+# Create README.md
+touch README.md
+
+# Clone a remote repository
+# Get repository link from github and then in git bash
+git clone https://github.com/ahmedmds/testrepository.git
+
+# Forking a repository
+# Click 'Fork' in github repository
+
+#Git HEAD, simply a reference to a commit object
+cat .git/HEAD
+# Then clone the remote repository
+# Sync the forked copy with original repository
+git remote -v
+git remote add upstream https://github.com/ahmedmds/bluelimesampleapp.git
+git remote -v
+
+
+
+#Pulling
+# Go to repository folder in git bash and then..
+git pull
+
+
+
+#View commit logs, Go to repository folder in git bash and then..
+git log
+git log --since=2022-01-20
+
+
