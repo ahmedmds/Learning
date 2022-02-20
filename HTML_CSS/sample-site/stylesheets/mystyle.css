@@ -1,0 +1,51 @@
+/* "p", "li" are element types paragraph,list, respectively */
+p, li {
+    color:red; /* property-value pair */
+    font-size:15px;
+    border: 1px solid red;
+    line-height:2;
+    letter-spacing:1px;
+}
+
+h1 {
+    font-size:65px;
+    text-align:center;
+    margin: 0;
+    padding: 20px 0;
+    color: deepskyblue;
+    text-shadow: 3px 3px 1px black;
+}
+
+#quote {
+    font-style:italic;
+}
+
+.para {
+    font-style:italic;
+    color:blue;
+    font-family:Arial, Helvetica, Times;
+    font-weight:bold;
+}
+
+body {
+    margin:0 auto;
+    padding:0 20px 20px 20px;
+    width:600px;
+    border:4px solid black; /* 4px is border thickness, width is 600px as specified in width property */
+    background-color: yellow;
+}
+
+html {
+    background-color: #27FFF8;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+img{
+    display:block;
+    margin: 0 auto; /* centres the image */
+}
+
+/* * {
+    background-color: yellow;
+} */
