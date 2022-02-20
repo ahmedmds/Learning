@@ -1,0 +1,27 @@
+For Bootstrap-
+
+https://getbootstrap.com/docs/4.5/getting-started/download/
+
+Download from here, a zip file will be downloaded, then extract the two files bootstrap.min.js and bootstrap.min.css
+
+
+
+For JQuery-
+
+https://jquery.com/download/
+
+Download the compressed, production jquery 3.6.0 slim build.
+
+jquery-3.6.0.slim.min , will be downloaded.
+
+
+
+For popper.js -
+
+First you need to download NPM from- https://nodejs.org/en/download/ (.msi 64 bit)
+
+then after installation, type 'Terminal' on you pc search bar at bottom left.
+
+There type: npm i @popperjs/core
+
+A file named node_modules (in Users) will be downloaded and inside that you will find: popper.min
