@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>jQuery Event Handler</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+
+                var originalState = $("div").clone();
+
+                $('#reset_button').click(function() {                    
+                    $("div").replaceWith(originalState.clone());
+                    });
+
+                $('#zoom_button').click(function() {
+                    $('div').animate({left:'200px'}, "slow");
+                    $('div').animate({fontSize:'5em'}, "slow");
+                    });
+
+                $('#show_button').click(function() {
+                    $('div').show("fast");
+                    });
+
+                $('#hide_button').click(function() {
+                    $('div').hide("fast");
+                    });
+
+                $('#toggle_button').click(function() {
+                    $('div').toggle("fast");
+                    });
+
+                $('#slideup_button').click(function() {
+                    $('div').slideUp(1000);
+                    });
+
+                $('#slidedown_button').click(function() {
+                    $('div').slideDown("fast", "linear");
+                    });
+
+                $('#slidetoggle_button').click(function() {
+                    $('div').slideToggle("slow");
+                    });
+
+                $('#fadeout_button').click(function() {
+                    $('div').fadeOut(2000);
+                    });
+
+            });
+        </script>
+
+    </head>
+
+
+    <body>
+        
+        <button id="reset_button" style="background-color:#fa2840;color:#fff; border:none"> Reset</button>
+
+        <div style="background-color:#1a1c18;height:500px;width:750px;position:absolute;color:#fff;"><h1>Welcome!</h1></div>
+        
+        <button id="zoom_button" style="background-color:#fa2840;color:#fff; border:none"> Zoom</button>
+        <button id="show_button" style="background-color:#fa2840;color:#fff; border:none"> Show</button>
+        <button id="hide_button" style="background-color:#fa2840;color:#fff; border:none"> Hide</button>
+        <button id="toggle_button" style="background-color:#fa2840;color:#fff; border:none"> Toggle</button>
+
+        <button id="slideup_button" style="background-color:#fa2840;color:#fff; border:none"> Slide Up</button>
+        <button id="slidedown_button" style="background-color:#fa2840;color:#fff; border:none"> Slide Down</button>
+        <button id="slidetoggle_button" style="background-color:#fa2840;color:#fff; border:none"> Toggle Slide</button>
+
+        <button id="fadeout_button" style="background-color:#fa2840;color:#fff; border:none"> Fade Out</button>
+    </body>
+
+
+</html>

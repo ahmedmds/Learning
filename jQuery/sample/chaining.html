@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>jQuery Event Handler</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+
+                $('#slideupdown_button').click(function() {
+                    $('div').css("background-color", "red").slideUp(2000).slideDown(2000);
+                });
+
+            });
+        </script>
+
+    </head>
+
+
+    <body>
+        <button id="slideupdown_button" style="background-color:#fa2840;color:#fff; border:none"> Slide Up-Down</button>
+
+        <div style="background-color:#1a1c18;height:500px;width:750px;position:absolute;color:#fff;"><h1>Welcome!</h1></div>        
+    </body>
+
+
+</html>

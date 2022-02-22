@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Demo on jQuery</title>
+    </head>
+
+    <body>
+        <a href="https://www.google.com">Link to Google</a>
+
+        <!-- Local -->
+        <script src="jquery.js"></script>
+
+        <!-- Via CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script>
+            // Your code goes here
+            $(document).ready(function () {  // The "$" signs means referencing a jQuery library. "$(document).read(function ()" means wait for webpage to load first and then execute code 
+                $("a").click(function(event) {
+                    alert("Redirecting to Google");
+            });
+            });         
+
+
+        </script>
+
+    </body>
+
+
+
+</html>
