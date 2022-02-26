@@ -86,3 +86,7 @@ git log
 git log --since=2022-01-20
 
 
+#Reset local branch to what's at remote
+git reset --hard origin/master
+
+
