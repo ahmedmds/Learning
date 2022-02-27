@@ -4,6 +4,17 @@
 #### Activating the virtual environment ###
 ....\Projects>venv\Scripts\activate
 
+#### Installing a package in the virtual environment ###
+(venv) ....\Projects>pip install flask
+
+#### Saving list of packages installed in the virtual environment ###
+(venv) ....\Projects>pip freeze > requirements.txt
+
+#### Installing packages to your virtual environment from a requirements.txt ###
+(venv) ....\Projects>pip install -r requirements.txt
+
 #### Deactivating the virtual environment ###
 (venv) ....\Projects>deactivate
+
+
 
