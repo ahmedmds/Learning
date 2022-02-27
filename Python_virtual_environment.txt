@@ -1,6 +1,16 @@
 #### Creating a virtual environment in a Projects folder ###
 ....\Projects>python -m venv venv
 
+### In VS Code, set Python Interpreter to venv ###
+Will be prompted when python -m venv venv is executed or else...
+Go to 'Terminal' and then 'New Terminal'
+Ctrl+Shift*P
+Click 'Python: Select Interpreter'
+Click 'Enter Interpreter Path' and enter path:
+....\Projects\venv\Scripts\python.exe
+*Make sure in VS code that the correct 'venv' is set at bottom right
+
+
 #### Activating the virtual environment ###
 ....\Projects>venv\Scripts\activate
 
