@@ -2,11 +2,7 @@
 ....\Projects>python -m venv venv
 
 #### Activating the virtual environment ###
-....\Projects\venv>scripts\activate
-
-#### Directory for working in the virtual environment ###
-Go back to the main Projects folder
-(venv) ....\Projects\venv>cd..
+....\Projects>venv\Scripts\activate
 
 #### Deactivating the virtual environment ###
 (venv) ....\Projects>deactivate
