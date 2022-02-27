@@ -1,5 +1,5 @@
 #### Creating a virtual environment in a Projects folder ###
-~\Projects>python -m venv venv
+....\Projects>python -m venv venv
 
 #### Activating the virtual environment ###
 ....\Projects\venv>scripts\activate
