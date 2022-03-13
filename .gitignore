@@ -1,3 +1,5 @@
 healthy/
 .idea/
 .vscode/
+venv/
+__pycache__/
