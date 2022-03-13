@@ -1,0 +1,20 @@
+# Environment variables have to be set for the server so it knows what module or package contains the flask application.
+# Environment variables can be set in command line interface or inside a .flaskenv file
+# With development mode, the debug mode is on and that server is restarted automatically when the code is changed, as opposed to production mode.
+
+#Setting environment variables in command line interface 
+(venv) ....\Projects> set FLASK_APP=hello.py
+(venv) ....\Projects> set FLASK_ENV=development
+
+#For .flaskenv method, install package python-dotenv
+FLASK_ENV=development
+FLASK_APP=hello.py
+
+# Starting and stopping development server
+#Starting
+(venv) ....\Projects>flask run
+# OR
+(venv) ....\Projects>python -m flask run
+
+#Stopping
+Press CTRL+C

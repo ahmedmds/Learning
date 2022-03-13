@@ -1,0 +1,86 @@
+*** base.html previous
+
+<html>
+    <head>
+        {% block head %}
+            <title>{% block title %} {% endblock %} Base Template</title>
+    </head>
+    {% endblock %}
+
+    <body>
+        {% block quote %}
+            <p>Kindness needs no translator. Be kind as much as possible.</title>
+        {% endblock %}
+
+        {% block body %}
+        {% endblock %}
+    </body> 
+    
+</html>
+
+
+
+
+
+
+
+*** index.html previous
+
+{% extends "base.html" %}
+{% block title %} Index Page {% endblock %}
+
+{% block head %}
+    {{ super() }}
+
+    <style>
+        p{
+            color:blue;
+            font-size:30px;
+        }
+    </style>
+
+{%endblock%}
+
+
+{% block body %}
+
+<h1>Hello World!</h1>
+
+<h2>Cities are: </h2>
+
+<ul>
+    {% for city in cities %}
+    <li>{{city}}</li>
+    {% endfor %}
+</ul>
+
+{%endblock%}
+
+
+
+
+
+
+*** user.html previous
+
+{% extends "base.html" %}
+{% block title%} User Template {% endblock %}
+
+{% block body %}
+
+{% if name.startswith('person') %}
+
+<!-- The {{name}} construct references a variable, a special placeholder that 
+    tells the jinja2 template engine that the value that 
+    goes in that place should be obtained from data provided at the time the template is rendered -->
+<h1>Hello, {{name}}!</h1> 
+
+<h2>How are you doing today?</h2>
+
+{% else %}
+
+<h1>Hello There!</h1>
+
+{% endif %}
+
+{% endblock %} -->

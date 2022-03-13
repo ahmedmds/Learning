@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %} Index Page {% endblock %}
+
+{% block head %}
+    {{ super() }}
+
+    <style>
+        p{
+            color:blue;
+            font-size:30px;
+        }
+    </style>
+
+{%endblock%}
+
+
+{% block body %}
+
+<h1>Hello World!</h1>
+
+<h2>Cities are: </h2>
+
+<ul>
+    {% for city in cities %}
+    <li>{{city}}</li>
+    {% endfor %}
+</ul>
+
+{%endblock%}
