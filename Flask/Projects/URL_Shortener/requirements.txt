@@ -33,10 +33,11 @@ prompt-toolkit==3.0.20
 py==1.8.1
 Pygments==2.10.0
 pyparsing==2.4.6
+# pypiwin32==223
 pytest==5.3.5
 python-dateutil==2.8.2
 pytz==2021.1
-pywin32==301
+# pywin32==303
 pyzmq==22.3.0
 six==1.14.0
 tornado==6.1
