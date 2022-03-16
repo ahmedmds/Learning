@@ -8,8 +8,8 @@ app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:<pwd>@localhost/quotes'
 
 # For deployed app on Heroku, once the app is created (but before deployment) on Heroku, the Postgres database is provisioned via 'Resources' on Heroku
-# Replace <username>, <pwd> and <server> from credentials in Heroku
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://<username>:<pwd>@<server>'
+# Replace <username>, <pwd>, <host> and <database> from database credentials in Heroku
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://<username>:<pwd>@<host>/<database>'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']= False
 
