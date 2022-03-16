@@ -7,8 +7,9 @@ app = Flask(__name__)
 # For database on local machine, using Valentina Studio, create database 'quote' for user 'postgres', replace <pwd> with password
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:<pwd>@localhost/quotes'
 
-# For deployed app on Heroku, once the app is created (but before deployment) on Heroku, the Postgres database is provisioned via 'Resources' on Heroku, replace <pwd> with password
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://jzxrgqdegvowqw:bbee417256be2e0eb15f11101f6c127854b12bebd90dea546fc9185a1aea69b7@ec2-52-19-164-214.eu-west-1.compute.amazonaws.com:5432/d2e499be71bnot'
+# For deployed app on Heroku, once the app is created (but before deployment) on Heroku, the Postgres database is provisioned via 'Resources' on Heroku
+# Replace <username>, <pwd> and <server> from credentials in Heroku
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://<username>:<pwd>@<server>'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']= False
 
