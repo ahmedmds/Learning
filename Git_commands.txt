@@ -88,6 +88,3 @@ git log --since=2022-01-20
 
 #Reset local branch to what's at remote
 git reset --hard origin/master
-
-#Pushing only a specific folder 'URL_Shortener' in existing local 'master' to remote repository 'heroku'
-git subtree push --prefix Flask/Projects/URL_Shortener heroku master
