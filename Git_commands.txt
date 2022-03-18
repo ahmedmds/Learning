@@ -47,7 +47,10 @@ git merge login
 
 #Create remote repository
 #Create repo in github, then in git bash
-git remote add origin https://github.com/ahmedmds/testrepository.git
+git remote add origin https://github.com/<github_user>/testrepository.git
+
+#Change link of remote repository
+git remote set-url origin https://github.com/<github_user>/testrepository.git
 
 #Push 'master' to remote, Go to repository folder in git bash and then..
 git push -u origin master
