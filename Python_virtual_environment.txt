@@ -1,4 +1,4 @@
-#### Creating a virtual environment in a Projects folder ###
+############### Using 'venv': Creating a virtual environment in a Projects folder ##############
 ....\Projects>python -m venv venv
 
 ### In VS Code, set Python Interpreter to venv ###
@@ -28,3 +28,60 @@ Click 'Enter Interpreter Path' and enter path:
 
 
 
+############### Using 'pipenv': Creating a virtual environment in a Projects folder ##############
+
+# Install pipenv package
+D:\....\Project01>pip install pipenv
+# pipenv-pipes helps to switch between various environments
+D:\....\Project01>pip install pipenv-pipes
+
+# Create virtual environment
+D:\....\Project01>python -m pipenv shell
+
+#Virtual environment location
+C:\Users\...\.virtualenvs\Project01-nAGdvdQh
+
+# Activate virtual environment
+D:\....\Project01>python -m pipenv shell
+
+# Deactivate virtual envionment
+(Project01-nAGdvdQh) D:\....\Project01>exit
+
+# List virtual envionment
+D:\....\Project01>python -m pipenv --venv
+
+# For running any command in virtual environment
+D:\....\Project01>python -m pipenv run <command>
+
+# Install a package in virtual environment
+D:\....\Project01>python -m pipenv install pandas
+
+# Uninstall a package in virtual environment
+D:\....\Project01>python -m pipenv uninstall pandas
+
+# List packages in virtual environment
+D:\....\Project01>python -m pipenv lock -r
+
+# Create requirements.txt file
+D:\....\Project01>python -m pipenv lock -r > requirements.txt
+
+# Install packages from requirements.txt
+D:\....\Project01>python -m pipenv install -r requirements.txt
+
+# Run python interpreter
+D:\....\Project01>python -m pipenv run python
+
+# Installing a package e.g. pytest just for development purpose
+D:\....\Project01>python -m pipenv install pytest --dev
+
+# Uninstalling a package e.g. pytest from development only
+D:\....\Project01>python -m pipenv uninstall pytest --dev
+
+# Select correct interpreter in VSCode
+C:\Users\...\.virtualenvs\Project01-nAGdvdQh\Scripts\python.exe
+
+# Remove virtual environment
+D:\....\Project01>python -m pipenv --rm
+D:\....\Project01>del Pipfile
+If necessary, delete folder 'C:\Users\...\.virtualenvs\Project01-nAGdvdQh'
+C:\Users\...\.virtualenvs>rm Project01-nAGdvdQh
