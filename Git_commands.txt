@@ -1,3 +1,8 @@
+# More resources
+git commands: https://www.atlassian.com/git/tutorials/comparing-workflows/
+git flow: http://danielkummer.github.io/git-flow-cheatsheet/
+
+
 #In Git Bash
 
 # Basic configuration
@@ -36,14 +41,29 @@ git reset
 #Commit
 git commit -m "My first commit"
 
-#Create new branch
-git branch login
+# Creating branch
+git checkout -b feature-1
 
-#Switch branch to 'login'
-git checkout login
+# you are now in a branch, you can edit and create new files
+git add .
+git commit -am “new feature”
 
-#Merge branches e.g. merge 'login' to 'master', go to master branch and ..
-git merge login
+# Merging branch to master
+git checkout master
+git merge feature-1
+git push
+
+# Deleting branch
+git branch -d feature-x
+
+# List all branches
+git branch -a
+
+# Switch branch
+git checkout feature-x
+
+# Switch to master branch
+git checkout master
 
 #Create remote repository
 #Create repo in github, then in git bash
